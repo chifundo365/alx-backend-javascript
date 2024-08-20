@@ -1,6 +1,6 @@
 /* eslint-disable no-unsafe-negation */
 export default function updateUniqueItems(map) {
-  if (!map instanceof Map) {
+  if (!(map instanceof Map)) {
     throw new Error('cannot process');
   }
   const keys = map.keys();
