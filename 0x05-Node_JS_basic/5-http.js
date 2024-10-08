@@ -48,8 +48,8 @@ const app = http.createServer((req, res) => {
     res.write('Hello Holberton School!');
     res.end();
   } else if (req.url === '/students') {
+    res.write('This is the list of our students\n');
     countStudents(process.argv[2]).then((output) => {
-      res.write('This is the list of our students\n');
       res.end(output);
     }).catch(() => {
       res.statusCode = 404;
