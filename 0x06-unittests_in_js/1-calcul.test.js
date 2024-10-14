@@ -22,23 +22,23 @@ describe('Test a calculateNumber Function', () => {
 
   describe('Test subtract', () => {
     it('Should Return 9', () => {
-      assert.equal(calculateNumber('SUBTRACT', 10, 19), 9);
+      assert.equal(calculateNumber('SUBTRACT', 19, 10), 9);
     });
     
     it('Should return -6', () => {
-      assert.equal(calculateNumber('SUBTRACT', -2, -4), -2);
+      assert.equal(calculateNumber('SUBTRACT', -4, -2), -2);
     });
 
     it('Should return 4', () => {
-      assert.equal(calculateNumber('SUBTRACT', 3.4, 7.1), 4);
+      assert.equal(calculateNumber('SUBTRACT', 7.1, 3.4), 4);
     });
 
     it('Should return 73', () => {
-      assert.equal(calculateNumber('SUBTRACT', 27, 100), 73);
+      assert.equal(calculateNumber('SUBTRACT', 100, 27), 73);
     });
 
     it('Should return 8', () => {
-      assert.equal(calculateNumber('SUBTRACT', 8, 16), 8);
+      assert.equal(calculateNumber('SUBTRACT', 16, 8), 8);
     });
   });
 
