@@ -2,7 +2,7 @@ const expect  = require('chai').expect;
 const calculateNumber = require('./1-calcul');
 
 describe('Test a calculateNumber Function', () => {
-  describe('Test the Addition', () => {
+  describe('SUM', () => {
     it('Should return 5', () => {
       expect(calculateNumber('SUM', 3.1, 2.4)).to.equal(5);
     });
@@ -23,7 +23,7 @@ describe('Test a calculateNumber Function', () => {
     });
    });
 
-  describe('Test subtract', () => {
+  describe('SUBTRACT', () => {
     it('Should Return 9', () => {
       const result = calculateNumber('SUBTRACT', 19, 10);
       expect(result).to.equal(9);
@@ -50,7 +50,7 @@ describe('Test a calculateNumber Function', () => {
     });
   });
 
-  describe('Test Divide', () => {
+  describe('DIVIDE', () => {
     it('Should return 2', () => {
       result = calculateNumber('DIVIDE', 4, 2);
       expect(result).to.equal(2);
